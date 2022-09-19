@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all ease-in-out 0.3s;
+    font-family: 'Roboto', serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #196F3D;
+    /* #196F3D + #26BFA0 */
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: 28px;
+}
+
+.modal {
+    background: rgb(255, 237, 75);
+    background: linear-gradient(63deg, rgba(255, 237, 75, 1) 35%, rgba(253, 205, 59, 1) 35%);
+    justify-content: space-around !important;
+    width: 100%;
+    height: 90%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 100%;
+    flex: 1;
+}
+
+#form {
+    flex-direction: column;
+}
+
+input {
+    border: #d6d6d6 2px solid;
+    background-color: #fff;
+    padding: 12px;
+    outline: 0;
+    margin: 8px;
+    color: #000;
+}
+
+input[type="number"],
+input[type="email"],
+input[type="text"] {
+    height: 36px;
+    width: 80%;
+}
+
+input:focus {
+    border: #0383c9 1px solid;
+    box-shadow: 0px 0px 5px #0383c9;
+}
+
+input::placeholder {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+span {
+    margin: 8px;
+    font-size: 14px;
+    align-self: start;
+    color: #444;
+}
+
+.group {
+    flex-direction: column;
+    width: 80%;
+}
+
+label {
+    font-size: 14px;
+    color: #444;
+    align-self: start;
+}
+
+button {
+    padding: 12px 24px;
+	border-radius: 3px;
+	color: #fff;
+	background: #027ad6;
+	font: 16px sans-serif;
+    letter-spacing: 3px;
+    position: relative;
+    border: 0;
+    margin: 10px;
+}
+
+button:active {
+    top: 2px;
+}
+
+button:hover {
+    background-color: #035785;
+}
+
+.hr {
+    background-color: #fff;
+    border: 2px solid #d6d6d6;
+    width: 80%;
+    height: 6px;
+    margin: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#result {
+    border-top: 1px solid #d6d6d6;
+    padding-top: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+td {
+    background-color: #fff;
+    padding: 10px;
+    border: 4px solid rgba(253, 205, 59, 1);
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+th {
+	background: #027ad6;
+    border: 4px solid rgba(253, 205, 59, 1);
+    border-collapse: collapse;
+    color: #fff;
+    padding: 10px;
+    font: 16px sans-serif;
+    letter-spacing: 3px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}

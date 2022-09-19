@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>CSS</title>
+</head>
+
+<body class="flex">
+    <div class="modal flex">
+        <section id="form" class="flex">
+            <h1> Recrutamento Exército Brasileiro </h1>
+            <input type="text" id="name" placeholder="Nome" />
+            <input type="text" id="email" placeholder="Email" />
+            <input type="number" id="age" placeholder="Idade" />
+            <input type="number" id="weight" placeholder="Peso" />
+            <div class="hr"></div>
+            <div class="group flex">
+                <span> Você está bem alimentado? </span>
+                <label>
+                    <input type="radio" id="wf-radio-1" name="wellFeed" value="yes" /> Sim
+                </label>
+                <label>
+                    <input type="radio" id="wf-radio-2" name="wellFeed" value="no" /> Não
+                </label>
+            </div>
+            <div class="hr"></div>
+            <div class="group flex">
+                <span> Você está doente no momento? </span>
+                <label>
+                    <input type="radio" id="wb-radio-1" name="wellBeeing" value="yes" /> Sim
+                </label>
+                <label>
+                    <input type="radio" id="wb-radio-2" name="wellBeeing" value="no" /> Não
+                </label>
+            </div>
+            <div class="hr"></div>
+            <button onclick="validateItems()"> SEJA RECRUTADO </button>
+        </section>
+        <section class="flex" id="table">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Peso</th>
+                    <th>Alimentado</th>
+                    <th>Doente</th>
+                    <th>Aprovado</th>
+                </tr>
+                <tbody id="tbody">
+                    <tr>
+                        <td>Vitor Lazzaretti</td>
+                        <td>18 anos</td>
+                        <td>66 kg</td>
+                        <td><img alt="" src="img/check.png"/></td>
+                        <td><img alt="" src="img/red.png"/></td>
+                        <td><img alt="" src="img/check.png"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
